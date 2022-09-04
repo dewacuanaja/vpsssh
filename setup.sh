@@ -51,7 +51,7 @@ echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
 echo -e "${NC}${LIGHT}Info : about.tker.my.id"
 echo -e "${NC}${LIGHT}WhatsApp : 085161707213"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/dilombok"
+echo -e "${NC}${LIGHT}Telegram : https://t.me/diombok"
 exit 0
 fi
 rm -f setup.sh
@@ -60,8 +60,8 @@ if [ -f "/etc/xray/domain" ]; then
 echo "Script Already Installed"
 exit 0
 fi
-mkdir /var/lib/tkervpnstore;
-echo "IP=" >> /var/lib/tkervpnstore/ipvps.conf
+mkdir /var/lib/akbarstorevpn;
+echo "IP=" >> /var/lib/akbarstorevpn/ipvps.conf
 wget https://${akbarvpn}/cf.sh && chmod +x cf.sh && ./cf.sh
 #install ssh ovpn
 wget https://${akbarvpn}/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
